@@ -1,0 +1,108 @@
+.table {
+  width: 100%;
+  word-wrap: nowrap;
+}
+
+.table > tbody > tr > td {
+  white-space: nowrap;
+  margin-top: -5px;
+  padding: 0.2rem;
+  color: var(--dark);
+}
+
+.table > tbody > tr:nth-of-type(odd) {
+  background-color: var(--grey);
+  border-bottom: 1px solid;
+  border-color: var(--secondary);
+}
+
+.table > thead > tr {
+  margin: 0;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+.table > tbody > tr:hover {
+  cursor: pointer;
+}
+
+.table > thead > tr > td {
+  padding: 0.5rem;
+}
+
+.item_count {
+  text-align: center;
+  font-size: 16px;
+}
+
+.item_status_activo {
+  text-align: center;
+  font-size: 14px;
+}
+
+.item_status_inactivo {
+  text-align: center;
+  font-size: 14px;
+}
+
+.btn_operation {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.2rem;
+  cursor: pointer;
+  margin: 0.1rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+}
+
+.btn_operation:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.opciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 4px dashed var(--white);
+}
+
+.modal_info_name {
+  color: white;
+  font-size: 30px;
+}
+
+.modal_info_cate {
+  font-size: 20px;
+}
+
+.modal_info_exist {
+  font-size: 20px;
+}
+
+.modal_info_count {
+  font-size: 3rem;
+}
+
+.input_search {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}

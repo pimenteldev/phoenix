@@ -1,0 +1,158 @@
+.content_body {
+  width: 100%;
+  padding: 1rem;
+  transition: all 1s ease;
+}
+
+.toast {
+  z-index: 9999999999;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+input[type='file'],
+textarea,
+select {
+  border: none;
+  width: 100%;
+  background-color: var(--grey);
+  color: var(--dark);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--dark);
+  opacity: 0.5;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  color: var(--primary);
+}
+
+.msg_err {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--primary);
+  z-index: 99;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #050f1aab;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  overflow: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_body {
+  position: relative;
+  background-color: white;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1060;
+}
+
+.modal_body_facture {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  z-index: 99999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  box-sizing: content-box;
+}
+
+.modal_body_buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+  background-color: #212529;
+  color: white;
+}
+
+@media print {
+}
+
+@media screen and (max-width: 375px) {
+  .modal_body_facture {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    padding: 0;
+  }
+  .modal_body_buttons {
+    gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .modal_body_facture {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal_body_facture {
+    width: auto;
+    height: auto;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,54 @@
+.form_edita_articulo {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input_edita_articulo {
+  width: 100%;
+}
+
+.form_item_edita_articulo_100 {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.form_item_edita_articulo_100 .input_edita_articulo {
+  width: 100%;
+}
+
+.form_item_edita_articulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.buttons_actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media only screen and (min-width: 600px) {
+  .form_item_edita_articulo {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

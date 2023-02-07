@@ -1,0 +1,16 @@
+.buttons_actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: var(--grey);
+  border-radius: 5px 5px 0 0;
+}
+
+.buttons_actions > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

@@ -1,0 +1,8 @@
+.item_active {
+  opacity: 0.9;
+}
+
+.p_item_active {
+  display: flex;
+  opacity: 1;
+}

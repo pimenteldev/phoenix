@@ -1,0 +1,68 @@
+.button_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.button {
+  color: var(--dark);
+  background-color: var(--grey);
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  min-height: 100px;
+  transition: all 0.2s ease-in;
+}
+
+.button span {
+  padding: 1rem;
+  background-color: white;
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 2px 0.1rem hsla(0, 0%, 0%, 0.212);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+@media screen and (max-width: 375px) {
+  .button_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .button_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .button_list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button_list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

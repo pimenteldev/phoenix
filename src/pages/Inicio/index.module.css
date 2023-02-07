@@ -1,0 +1,38 @@
+.content_init {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.content_init_graph {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.content_init_graph > p {
+  width: 100%;
+}
+
+.content_init_text {
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.content_init_text h2 {
+  font-family: 'montserratbold';
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,47 @@
+.error_page_content {
+  width: calc(100% - 224px);
+  margin-left: 224px;
+  position: absolute;
+  height: 100vh;
+}
+
+.error_page {
+  align-items: center;
+  color: var(--teal);
+  display: flex;
+  font-size: 3rem;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-item-nopage {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  text-align: left;
+  padding-left: 50px;
+  transition: all 0.3s ease;
+  background-color: var(--grey);
+  border-bottom: 1px solid var(--teal);
+}
+
+.navbar-item-nopage::before {
+  align-items: center;
+  background-color: var(--orange);
+  border-radius: 50%;
+  bottom: 0;
+  color: var(--grey-teal);
+  content: ">";
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  justify-content: center;
+  left: 10px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 28px;
+  width: 20px;
+}

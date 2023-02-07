@@ -1,0 +1,50 @@
+.card_opciones {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+.card_opcion {
+  width: 100%;
+  color: var(--dark);
+  background-color: var(--grey);
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.card_opcion:hover {
+  box-shadow: 2px 2px 2px 0.1rem hsla(0, 0%, 0%, 0.212);
+  background-color: var(--primary);
+  color: white;
+}
+
+.card_opcion_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card_opcion_body_icon {
+  width: 100%;
+  background-color: white;
+  color: var(--dark);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.card_opcion_body_icon > i {
+  color: var(--primary);
+}
+
+.card_opcion_body div {
+  font-size: 18px;
+}

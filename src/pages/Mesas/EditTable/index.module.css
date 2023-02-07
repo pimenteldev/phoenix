@@ -1,0 +1,59 @@
+.form_edita_mesa {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input_edita_mesa {
+  width: 100%;
+}
+
+.form_item_edita_mesa_100 {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 4px dashed var(--text);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form_item_edita_mesa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.buttons_actions_edita_mesa {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+}
+
+@media only screen and (min-width: 600px) {
+  .form_item_edita_mesa {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

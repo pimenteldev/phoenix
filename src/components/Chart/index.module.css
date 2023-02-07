@@ -1,0 +1,196 @@
+.content {
+  position: relative;
+  margin-top: 1.5rem;
+  font-size: 16px;
+}
+
+.content_card {
+  position: relative;
+}
+
+.content_card_body {
+  border-radius: 10px;
+  height: 100%;
+  position: relative;
+}
+
+.content_card_body_top {
+  width: 100%;
+}
+
+.content_card_body_top_charts {
+  display: flex;
+  align-items: stretch;
+  justify-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 60px;
+}
+
+.content_card_body_top_charts > div.item_active {
+  opacity: 0.9;
+  background-color: var(--primary);
+}
+
+.content_card_body_top_charts > div {
+  position: relative;
+  text-align: center;
+  height: 150px;
+  width: 1.5rem;
+  border-radius: 5px;
+  display: flex;
+  z-index: 98;
+  align-content: flex-end;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 20px;
+}
+
+.content_card_body_top_charts > div > div {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--grey-chart);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  align-content: flex-end;
+  z-index: 99;
+}
+
+.content_card_body_top_charts > div > div::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 14px;
+  top: -7px;
+  bottom: 0;
+  left: -14px;
+  right: 0;
+  background-color: var(--grey-chart);
+  transform: skewY(45deg);
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.content_card_body_top_charts > div > div::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 1.5rem;
+  top: -14px;
+  bottom: 0px;
+  left: -7px;
+  right: 0;
+  background-color: var(--grey-chart);
+  transform: skewX(45deg);
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.content_card_body_top_charts > div > p {
+  height: auto;
+  opacity: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 14px;
+  margin-left: -15px;
+}
+
+.content_card_body_top_charts > div:hover div,
+.content_card_body_top_charts > div:hover div::before,
+.content_card_body_top_charts > div:hover div::after {
+  background-color: var(--primary);
+}
+
+.content_card_body_top_charts > div:hover > p {
+  background-color: var(--dark);
+  opacity: 0.8;
+}
+
+.content_card_body_top_charts > div > span {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  bottom: 94px;
+  overflow: hidden;
+  transform: rotate(269deg);
+  text-overflow: ellipsis;
+  align-content: center;
+  flex-wrap: nowrap;
+  left: -98px;
+  color: var(--dark);
+}
+
+.content_card_body_top_charts > div > small {
+  color: var(--dark);
+}
+
+.content_card_body_divider {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  height: 1px;
+  background-color: var(--grey);
+  opacity: 0.5;
+}
+
+.content_card_body_bottom {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+.content_card_body_bottom > div > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maxProducts {
+  text-align: right;
+}
+
+@media screen and (max-width: 375px) {
+  .content_card_body_top_charts {
+    gap: 0.1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content_card_body_top_charts {
+    gap: 0.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content_card_body_top_charts {
+    gap: 0.3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
